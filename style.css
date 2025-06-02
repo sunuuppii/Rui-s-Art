@@ -1,0 +1,111 @@
+/* フォントとベースカラー設定 */
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Segoe UI', sans-serif;
+  background-color: #f9fafa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #8DBCC7;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fdfdfd;
+  text-decoration: underline;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #8DBCC7;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #8DBCC7;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #76a9b4;
+}
+
+/* ギャラリー */
+.gallery-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.gallery-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.gallery-image.active {
+  opacity: 1;
+}
+
+/* お知らせ */
+#news ul {
+  list-style: none;
+  padding: 0;
+}
+
+#news li {
+  padding: 8px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+/* フッター */
+footer {
+  background-color: #8DBCC7;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
